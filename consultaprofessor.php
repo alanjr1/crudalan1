@@ -11,27 +11,29 @@
            echo "
               <script>
                  alert('Dados não localizados');
-                 window.location.href = 'index.php';   
+                 window.location.href = 'cadprofessor.php';   
               </script>
            ";
        }
    
    ?>   
-       Nome:<br/>
+       Professor:<br/>
        <input type="text" value="<?php echo $campos['nome']?>"/><br/>
-       Idade:<br/>
-       <input type="text" value="<?php echo $campos['idade']?>"><br/>
-       E-mail:<br/>
-       <input type="text" value="<?php echo $campos['email']?>"><br/>
+       Matéria:<br/>
+       <input type="text" value="<?php echo $campos['materia']?>"><br/>
+       Curso:<br/>
+       <input type="text" value="<?php echo $campos['curso']?>"><br/>
 
     <?php   
     }else{
         echo "
             <script>
                 alert('Campo em branco, digite um nome');
-                window.location.href='index.php';
+                window.location.href='cadprofessor.php';
             </script>
         
         ";
     }
 ?>
+<a href="deletarprofessor.php?id=<?php echo $campos['codigo']; ?>">Excluir</a>
+<a href="areadealterarprofessor.php?id=<?php echo $campos['codigo']; ?>">Alterar</a>

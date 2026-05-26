@@ -15,4 +15,9 @@ create table tbcliente(
         fabricante varchar(100),
         lote int
     );
-  select *from tbproduto where produto=
+ create table tbprofessor(
+    codigo int primary key auto_increment,
+    professor varchar(90),
+    materia varchar(90),
+    curso varchar(50)
+);
