@@ -6,8 +6,9 @@
        $campos = mysqli_fetch_array($executar); 
    ?>   
    <form action="alterarcliente.php" method="POST">
-   Código:<br/>
-   <input type="text" name= "cxid" value="<?php echo $campos['codigo']?>" disabled/><br/> 
+<input type="hidden" name="cxid" value="<?php echo $campos['codigo']?>"/>
+Código:<br/>
+<input type="text" value="<?php echo $campos['codigo']?>" disabled/><br/>
        Nome:<br/>
        <input type="text" name="cxnome" value="<?php echo $campos['nome']?>"/><br/>
        Idade:<br/>
