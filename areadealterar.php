@@ -5,7 +5,7 @@
        $executar = mysqli_query($conn,$consulta);
        $campos = mysqli_fetch_array($executar); 
    ?>   
-   <form action="" method="POST">
+   <form action="alterarcliente.php" method="POST">
    Código:<br/>
    <input type="text" name= "cxid" value="<?php echo $campos['codigo']?>" disabled/><br/> 
        Nome:<br/>
