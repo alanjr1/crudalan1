@@ -18,7 +18,7 @@
    
    ?>   
        Professor:<br/>
-       <input type="text" value="<?php echo $campos['nome']?>"/><br/>
+       <input type="text" value="<?php echo $campos['professor']?>"/><br/>
        Matéria:<br/>
        <input type="text" value="<?php echo $campos['materia']?>"><br/>
        Curso:<br/>

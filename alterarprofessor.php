@@ -24,6 +24,5 @@ if($executar == true){
     ";
     }else{
         echo "erro de conexão";
-        </script>
     }
     ?>
